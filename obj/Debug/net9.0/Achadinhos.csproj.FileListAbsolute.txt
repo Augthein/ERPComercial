@@ -218,3 +218,4 @@ C:\Users\augus\OneDrive\Área de Trabalho\Achadinhos ERP\Achadinhos\bin\Debug\ne
 C:\Users\augus\OneDrive\Área de Trabalho\Achadinhos ERP\Achadinhos\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\augus\OneDrive\Área de Trabalho\Achadinhos ERP\Achadinhos\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\augus\OneDrive\Área de Trabalho\Achadinhos ERP\Achadinhos\obj\Debug\net9.0\Achadinhos.csproj.Up2Date
+C:\Users\augus\OneDrive\Área de Trabalho\Achadinhos ERP\Achadinhos\obj\Debug\net9.0\Achadinhos.sourcelink.json

@@ -20,14 +20,29 @@ public class RegisterModel : PageModel
 
     public IActionResult OnPost()
     {
+        //Check if the .cshtml form validations passed
         if (!ModelState.IsValid)
         {
-            return Page(); // Ou qualquer outra resposta adequada
+            return Page();
         }
 
-        _db.Users.Add(user);
-        _db.SaveChanges();
+        //Register user after checking for all non form validations
+        var registeredUser = _db.Users.FirstOrDefault(u => u.UserName == user.UserName);
 
-        return RedirectToPage("Index"); // Ou qualquer outra página
+        //Check if UserName already exists
+        if (registeredUser != null)
+        {
+            ModelState.AddModelError("user.UserName", "Usuário já cadastrado.");
+            return Page();
+        }
+        //Register if all complains
+        else
+        {
+            _db.Users.Add(user);
+            _db.SaveChanges();
+
+            return RedirectToPage("Index");
+        }
+        
     }
 }
